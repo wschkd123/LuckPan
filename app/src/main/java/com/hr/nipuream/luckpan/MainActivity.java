@@ -10,13 +10,13 @@ import com.hr.nipuream.luckpan.view.RotatePan;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity implements LuckPanLayout.AnimationEndListener{
+public class MainActivity extends AppCompatActivity implements LuckPanLayout.AnimationEndListener {
 
     private RotatePan rotatePan;
     private LuckPanLayout luckPanLayout;
     private ImageView goBtn;
     private ImageView yunIv;
-    private String[] strs ;
+    private String[] strs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,17 +25,17 @@ public class MainActivity extends AppCompatActivity implements LuckPanLayout.Ani
         strs = getResources().getStringArray(R.array.names);
         luckPanLayout = (LuckPanLayout) findViewById(R.id.luckpan_layout);
         luckPanLayout.setAnimationEndListener(this);
-        goBtn = (ImageView)findViewById(R.id.go);
-        yunIv = (ImageView)findViewById(R.id.yun);
+        goBtn = (ImageView) findViewById(R.id.go);
+        yunIv = (ImageView) findViewById(R.id.yun);
     }
 
-    public void rotation(View view){
-        luckPanLayout.rotate(-1,100);
+    public void rotation(View view) {
+        luckPanLayout.rotate(-1, 100);
     }
 
     @Override
     public void endAnimation(int position) {
-        Toast.makeText(this,"Position = "+position+","+strs[position],Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Position = " + position + "," + strs[position], Toast.LENGTH_SHORT).show();
     }
 
 

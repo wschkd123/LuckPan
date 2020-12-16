@@ -21,11 +21,11 @@ public class Util {
         return (int) (spValue * fontScale + 0.5f);
     }
 
-    public static double change(double a){
-        return a * Math.PI  / 180;
+    public static double change(double a) {
+        return a * Math.PI / 180;
     }
 
-    public static double changeAngle(double a){
+    public static double changeAngle(double a) {
         return a * 180 / Math.PI;
     }
 
