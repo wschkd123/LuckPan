@@ -1,12 +1,14 @@
 package com.hr.nipuream.luckpan;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
+
 import com.hr.nipuream.luckpan.view.LuckPanLayout;
 import com.hr.nipuream.luckpan.view.RotatePan;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity implements LuckPanLayout.AnimationEndListener{
 

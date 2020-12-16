@@ -12,21 +12,23 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.RectF;
-import android.support.v4.view.GestureDetectorCompat;
-import android.support.v4.view.ViewCompat;
-import android.support.v4.widget.ScrollerCompat;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
+
 import com.hr.nipuream.luckpan.R;
 import com.hr.nipuream.luckpan.util.Logger;
 import com.hr.nipuream.luckpan.util.Util;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+import androidx.core.view.GestureDetectorCompat;
+import androidx.core.view.ViewCompat;
+import androidx.core.widget.ScrollerCompat;
 
 /**
  * 描述：
